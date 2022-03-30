@@ -1,0 +1,22 @@
+Username:
+<input type="text" id="txt1" [(ngModel)]="username"/>
+{{username | uppercase}}
+<br/>
+<h3 class="text-danger">Click to choose Customer</h3>
+<li *ngFor="let customer of items let i=index trackBy: trackById"
+    (click)="onItemClicked(customer)">
+    {{i+1}} - {{customer.name}} - {{customer.balance}}
+</li>
+
+<div *ngIf="clicked;then show else warn"></div>
+<ng-template #show>
+You have selected:
+<input type="text" [(ngModel)]="clickedItem.name"/>
+</ng-template>
+<ng-template #warn>
+    <h3 class="danger">please select a customer!</h3>
+</ng-template>
+
+<button [disabled]="buttonStatus" (click)="save()">
+ Click me for bonus
+</button>
