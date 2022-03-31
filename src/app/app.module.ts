@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ApplicationRef, ComponentFactoryResolver, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,4 +21,17 @@ import { ChildComponent, LifeCycleComponent } from './components/lifecycle/compl
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private appRef:ApplicationRef){
+     const originalTick=appRef.tick;
+     appRef.tick = function(){
+       const winPerf=window.performance;
+       const start=winPerf.now();
+       const retValue=originalTick.apply(this)
+       const end = winPerf.now()
+       const runTime = end-start
+       window.console.log("change detection time", runTime)
+       return retValue;
+     }
+  }
+}
