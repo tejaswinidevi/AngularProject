@@ -15,6 +15,7 @@ describe('AppComponent', () => {
   });
 
   it('should create the app', () => {
+    //<app-root/>
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
@@ -30,6 +31,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('AngularProject app is running!');
+    expect(compiled.querySelector('span')?.textContent).toContain('AngularProject is running!');
   });
 });
+
+

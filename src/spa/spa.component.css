@@ -1,0 +1,8 @@
+a{
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+a:hover{
+    background-color: yellow;
+}

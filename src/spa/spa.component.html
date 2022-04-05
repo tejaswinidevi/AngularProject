@@ -1,0 +1,66 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">
+      <img width="30" alt="Angular Logo" 
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+      Angular SPA project</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" routerLink="/login">Login</a>
+        <a class="p-2 text-dark" routerLink="/newcontact" >Add new Contact</a>       
+      <a class="p-2 text-dark" routerLink="/about" >About us</a>                       
+    </nav>
+    <a class="btn btn-outline-primary btn-sm" href="#">
+      Project by DSR Murthy </a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+  <router-outlet></router-outlet>
+  </div>
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-text">All rights reserved to DSR Murthy &copy; 2022.</span>
+    </div>
+  </footer>
+  
+  
+  
+  
+  <!-- 
+  <header style="text-align:center;background-color:yellow">  
+    <h2 class="text-danger">
+            {{title}}!
+    </h2>  
+  <img width="50" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=" />
+  </header>
+  
+  <section class="text-left"  style="background-color:aquamarine">
+  <br/>
+  
+  
+  
+  <h2 class='text-center bg-success'>Reactive SPA Case study</h2>
+      <nav style="background-color:orange">
+          <a [routerLink]="['']">Login</a>
+          <a [routerLink]="['/services']">Our Services</a>
+          <a [routerLink]="['/newcontact']" >Add new Contact</a>       
+          <a [routerLink]="['/about']" >About us</a>                       
+      </nav>
+  
+          <div class="well" >
+              <router-outlet></router-outlet>
+          </div>  
+          
+          
+          
+  </section>
+  <br/>
+  <footer class="panel text-center bg-success ">
+    <h3>Copyright reserved to D.S.R.Murthy </h3>
+  </footer>
+  
+  -->
+  
+  
+  
